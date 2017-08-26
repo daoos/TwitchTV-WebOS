@@ -1,0 +1,138 @@
+//Custom variables
+$primary-color: #3f51b5; // color("indigo", "base");
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
+
+$secondary-color: $primary-color; // color("indigo", "darken-4");
+$success-color: #7cb342; // color("light-green", "darken-1");
+$error-color: #c2185b; // color("pink", "darken-2");
+$link-color: #304ffe; // color("indigo", "accent-4");
+
+$card-link-color: $link-color;
+$card-link-color-light: lighten($card-link-color, 20%);
+
+// Libraries
+@import "~materialize-css/sass/materialize";
+
+// Global
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	// -webkit-text-size-adjust: 100%;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: solid 4px $primary-color-light;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  	-ms-overflow-style: none;
+	-ms-content-zooming: none;
+	overflow: hidden;
+	// background-color: black;
+}
+
+html {
+	font-size: 100%;
+	// overflow: hidden;
+	// -webkit-overflow-scrolling: auto;
+}
+
+body {
+	color: color("grey", "lighten-5");
+	background: color("grey", "darken-4");
+	// font: 400 1em/1.5 sans-serif;
+	// letter-spacing: 0.01em;
+}
+
+
+// App
+#app {
+	width: 100%;
+	height: 100%;
+	> .row {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		> .col {
+			padding: 0;
+			height: 100%;
+		}
+	}
+}
+
+// Sidebar
+.sidebar {
+	margin: 0;
+	padding: 0;
+	.collection {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+		color: inherit;
+		height: 100%;
+		height: 100vh;
+		border: 0;
+		> .collection-header {
+			border: 0;
+			border-bottom: solid 1px rgba(gray, 0.5);
+		}
+		> .collection-item {
+			border: 0;
+			border-bottom: solid 1px rgba(gray, 0.5);
+		}
+	}
+}
+
+// View wrap
+.view-wrap {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+// Collection
+.collection.with-header .collection-header,
+.collection .collection-item {
+	background: transparent;
+}
+
+// Card
+.card {
+	background: rgba(black, 0.25);
+	.card-content {
+		padding: 12px;
+	}
+	.card-title {
+		width: 100%;
+		font-weight: normal;
+		line-height: 1.2;
+	}
+	.card-image .card-title {
+		background: rgba(black, 0.75);
+		padding: 12px;
+	}
+	.card-action {
+		padding: 12px;
+	}
+}

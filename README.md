@@ -1,2 +1,2 @@
 # TwitchTV-WebOS
-Twitch.TV app for LG WebOS 3.0 TV
+Twitch.TV app for WebOS LG TV

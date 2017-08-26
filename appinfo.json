@@ -1,0 +1,14 @@
+{
+    "vendor": "DavisMiculis",
+    "iconColor": "#6441a5",
+    "largeIcon": "largeIcon.png",
+    "icon": "icon.png",
+    "main": "index.html",
+    "bgImage": "background.png",
+    "id": "com.davismiculis.twitch",
+    "title": "Twitch",
+    "type": "web",
+    "version": "1.0.0",
+    "splashBackground": "background.png",
+    "uiRevision": 2
+}

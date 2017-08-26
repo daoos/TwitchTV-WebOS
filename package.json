@@ -1,0 +1,71 @@
+{
+    "name": "com.davismiculis.twitch",
+    "displayName": "Twitch",
+    "version": "1.0.0",
+    "description": "Twitch.TV app for WebOS LG TV",
+    "main": "index.html",
+    "private": true,
+    "scripts": {
+        "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "author": "Davis Miculis <davismiculis@gmail.com>",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "babel-core": "^6.25.0",
+        "babel-loader": "^7.1.1",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-es2016": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "cordova-android": "^6.2.3",
+        "cordova-icon": "^0.9.1",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-google-analytics": "^1.8.3",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-splash": "^0.9.0",
+        "eslint": "^3.19.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-node": "^5.1.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "jquery": "^2.2.4",
+        "laravel-mix": "^1.2.2",
+        "materialize-css": "^0.100.1",
+        "vue": "^2.4.1",
+        "vue-plugin-load-script": "^1.0.1",
+        "vue-resource": "^1.3.4",
+        "vue-router": "^2.7.0",
+        "vue-twitch-chat": "davismiculis/vue-twitch-chat",
+        "vue-twitch-player": "davismiculis/vue-twitch-player",
+        "vuex": "^2.3.1",
+        "webpack-livereload-plugin": "^0.11.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.12",
+        "browser-sync-webpack-plugin": "^1.2.0"
+    },
+    "optionalDependencies": {},
+    "babel": {
+        "presets": [
+            "es2015",
+            "stage-2",
+            "es2016"
+        ]
+    },
+    "engines": {
+        "node": ">= 6.0.0",
+        "npm": ">= 4.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}
